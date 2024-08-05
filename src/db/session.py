@@ -1,5 +1,6 @@
-from databases import Database
 import os
+
+from databases import Database
 
 __all__ = ["db"]
 

@@ -1,8 +1,10 @@
+from unittest.mock import ANY, patch
+
 import pytest
-from tests.helpers import MockResponse
-from src.http_client import NotFound, ResourceError
-from unittest.mock import patch, ANY
 from aiohttp import ClientSession
+
+from src.http_client import NotFound, ResourceError
+from tests.helpers import MockResponse
 
 pytestmark = [pytest.mark.asyncio]
 

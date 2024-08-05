@@ -1,6 +1,8 @@
-import aiohttp
 import ssl
 from typing import Any
+
+import aiohttp
+
 from src.http_client.exceptions import NotFound, ResourceError
 
 __all__ = ["HttpClient"]

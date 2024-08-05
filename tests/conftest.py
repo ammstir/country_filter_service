@@ -1,10 +1,11 @@
-import pytest_asyncio
-from src.http_client.client import HttpClient
-import pytest
 from unittest.mock import patch
-from src.models.base import metadata
+
+import pytest
+import pytest_asyncio
 from databases import Database
 
+from src.http_client.client import HttpClient
+from src.models.base import metadata
 
 DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/postgres"
 

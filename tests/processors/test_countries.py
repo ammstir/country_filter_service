@@ -1,15 +1,16 @@
+import json
+from pathlib import Path
+
 import pytest
+from sqlalchemy import insert, select
+
+from src.http_client.client import NotFound, ResourceError
+from src.models import IsoCountries
 from src.processors.countries import (
     CountryProcessor,
     InvalidIsoCodeError,
     IsoSourceError,
 )
-from src.http_client.client import ResourceError, NotFound
-import json
-from sqlalchemy import insert, select
-from src.models import IsoCountries
-from pathlib import Path
- 
 
 pytestmark = [pytest.mark.asyncio(scope="session")]
 

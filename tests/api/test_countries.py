@@ -1,7 +1,9 @@
+from unittest.mock import patch
+
 import pytest
 from fastapi.testclient import TestClient
+
 from src.main import app
-from unittest.mock import patch
 from src.processors import (
     CountryProcessor,
     InvalidIsoCodeError,

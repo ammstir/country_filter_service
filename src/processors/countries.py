@@ -1,8 +1,9 @@
-from src.http_client import HttpClient, NotFound, ResourceError
-from src.processors.exceptions import InvalidIsoCodeError, IsoSourceError
-from sqlalchemy import select, insert
-from src.models import IsoCountries
 from databases import Database
+from sqlalchemy import insert, select
+
+from src.http_client import HttpClient, NotFound, ResourceError
+from src.models import IsoCountries
+from src.processors.exceptions import InvalidIsoCodeError, IsoSourceError
 
 __all__ = ["CountryProcessor"]
 

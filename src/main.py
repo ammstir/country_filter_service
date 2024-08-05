@@ -1,8 +1,10 @@
-from fastapi import FastAPI
-from src.api import countries_router
-from src.http_client import http_client
-from src.db import db
 from contextlib import asynccontextmanager
+
+from fastapi import FastAPI
+
+from src.api import countries_router
+from src.db import db
+from src.http_client import http_client
 
 
 @asynccontextmanager
